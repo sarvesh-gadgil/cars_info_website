@@ -1,0 +1,36 @@
+/* Citing this whole CSS from 
+CSS Hero Image reference - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image */
+.hero-image {
+    height: 68%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: SignPainter;
+}

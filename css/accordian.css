@@ -1,0 +1,43 @@
+ /* Citing this whole CSS file from 
+ CSS Accordian Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol */
+
+ .accordion {
+     background-color: rgb(235, 235, 235);
+     color: black;
+     cursor: pointer;
+     padding: 18px;
+     width: 100%;
+     border: none;
+     text-align: left;
+     outline: none;
+     font-size: 14px;
+     transition: 0.4s;
+     border-radius: 10px;
+     border: 1px solid lightgrey
+ }
+
+ .active,
+ .accordion:hover {
+     background-color: white;
+     color: black
+ }
+
+ .accordion:after {
+     content: '\002B';
+     color: #777;
+     font-weight: bold;
+     float: right;
+     margin-left: 5px;
+ }
+
+ .active:after {
+     content: "\2212";
+ }
+
+ .panel {
+     padding: 0 18px;
+     background-color: white;
+     max-height: 0;
+     overflow: auto;
+     transition: max-height 0.2s ease-out;
+ }
